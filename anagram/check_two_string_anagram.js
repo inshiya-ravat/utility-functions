@@ -1,4 +1,4 @@
-eck(str1, str2){
+function check(str1, str2){
     str1 = str1.toLowerCase().trim()
     str2 = str2.toLowerCase().trim()
     if(str1.length != str2.length){

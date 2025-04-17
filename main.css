@@ -1,0 +1,31 @@
+/* *{
+    border: 1px solid black
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+.div1{
+    grid-row: 1;
+    grid-column: 1;
+}
+.div2{
+    grid-row: 2;
+}
+.div3{
+    grid-row: 1;
+    grid-column: 1;
+    background-color: aqua;
+    border-radius: 50%;
+    width: fit-content;
+    transform: translate(50%,50%); */
+/* } */
+
+button{
+    border: none;
+    background-color: aqua;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
