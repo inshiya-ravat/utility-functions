@@ -56,7 +56,6 @@
 // str[0] = 'h'; // error
 // alert( str[0] ); // doesn't work
 
-
 // function func (param1, param2){
 //     return param1+param2
 // }
@@ -72,8 +71,6 @@
 // console.log(memoed(1,3))
 // console.log(memoed(1,4))
 // console.log(memoed(1,3))
-
-
 
 // const func = (arg1, arg2) => {
 //     return arg1 + arg2
@@ -110,24 +107,23 @@
 // const memoed3= memo(obj.div)
 
 // console.log(memoed3(1,3))
-// console.log(memoed3(1,4))    
+// console.log(memoed3(1,4))
 // console.log(memoed3(1,3))
 
 // console.log(memoed(1,3))
-// console.log(memoed(1,4))    
+// console.log(memoed(1,4))
 // console.log(memoed(1,3))
 
 // console.log(memoed2(2,3))
-// console.log(memoed2(1,4))    
+// console.log(memoed2(1,4))
 // console.log(memoed2(2,3))
 
-
 // let set = new Set()
- 
+
 // let values = ["Hare", "Krishna", "Hare", "Krishna",
 //   "Krishna", "Krishna", "Hare", "Hare", ":-O"
 // ];
- 
+
 // function unique() {
 //   values.map(value=>{
 //      set.add(value)
@@ -136,7 +132,7 @@
 //   let s = new Set(...set)
 //   return s
 // }
- 
+
 // console.log(unique());
 
 // let obj1 = {
@@ -203,7 +199,6 @@
 // }
 // console.log(f.__proto__.__proto__== Object.prototype )
 
-
 // const GITHUB_API = "https://api.github.com/users/InshiyaRavat"
 // const user = fetch(GITHUB_API)
 // console.log(user)
@@ -259,7 +254,6 @@
 // console.log(User === User.prototype.constructor)
 // console.log(User.sayHi === User.prototype.sayHi)
 
-
 // class Parent{
 //     givePocketMoney(){
 //         return 20
@@ -276,7 +270,6 @@
 // const child1 = new Child()
 // child1.pocketMoney = child1.givePocketMoney()
 // console.log(child1.pocketMoney)
-
 
 // let testMixin = {
 //     sayHi(){
@@ -296,7 +289,6 @@
 // user1.sayBye()
 // user1.sayHi()
 // console.log(user1.__proto__ === testMixin.__proto__)
-
 
 // document.body.style.background = 'red'; // make the background red
 // setTimeout(() => document.body.style.background = '', 3000);
@@ -334,12 +326,10 @@
 //     }
 //     static sayHi(){
 //         console.log("hi to ",this.name)
-//     } 
+//     }
 // }
 // const user1 = new User("Inshiya")
 // console.log(User.sayHi === User.prototype.sayHi)
-
-
 
 // function $(elemId){
 //     return new ElementStyling(elemId)
@@ -359,7 +349,7 @@
 
 // function $(elemId){
 //     let element = document.getElementById(elemId)
-    
+
 //     return {
 //         element: element,
 //         css: function (property, value){
@@ -371,8 +361,6 @@
 // }
 
 // $("#button").css("color", "#fff").css("background-color", "#000").css("font-weight", "bold");
-
-
 
 // calculator(100).add(5).multiply(10).subtract(20).add(200).value()
 // function calculator(initialValue){
@@ -399,7 +387,6 @@
 //         }
 //     }
 // }
-
 
 // const originalArr = [1, 2, 3]
 // let negativeIndexHandler= {
@@ -433,7 +420,6 @@
 // promise.then(() => console.log("promise is resolved"))
 //     .catch((error) => console.log(error))
 
-
 // const promise1 = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         reject('Promise 1 rejected')
@@ -445,7 +431,7 @@
 //     },3000)
 // })
 // const promise3 = new Promise ((resolve,reject) => {
-//     setTimeout(() =>{ 
+//     setTimeout(() =>{
 //         resolve("Promise 3 resolved")
 //     },4000)
 // })
@@ -470,17 +456,17 @@
 // let user = {
 //     name: "sdfsfs",
 //     age: 10,
-   
+
 //     [Symbol.toPrimitive](hint) {
 //         console.log("inside primitive")
 //       console.log(hint);
 //       return hint === "string" ? this.toString() : this.valueOf();
 //     },
-   
+
 //     toString() {
 //       return this.name;
 //     },
-   
+
 //     valueOf() {
 //         console.log("a number")
 //       return this.age;
@@ -497,11 +483,10 @@
 // console.log(rabbit.__proto__)
 // console.log(rabbit.__proto__.__proto__)
 
-
 // [[1], [2], [3], [4], [5]]
 // chunk([1, 2, 3, 4, 5], 2)
 // [[1, 2], [3, 4], [5]]
-// 
+//
 // [[1, 2, 3], [4, 5]]
 
 // function chunk(arr, num){
@@ -511,7 +496,7 @@
 //     let j=0
 //     while(n>=0 && i<arr.length){
 //         result[j].push(arr[i])
-//         i++        
+//         i++
 //         if(n==1 && (num!=1 || )){
 //             result[j+1]= new Array()
 //             n=num
@@ -540,7 +525,6 @@
 
 // console.log(dog2 instanceof Dog) // true
 // console.log(dog3 instanceof Dog) // false
-
 
 // const ball = document.querySelector('#ball')
 // console.log(ball)
@@ -605,7 +589,6 @@
 //     console.log(myLocalStorage.getItem("token"))
 // },10000)
 
-
 // function check(str1, str2){
 //     str1 = str1.toLowerCase().trim()
 //     str2 = str2.toLowerCase().trim()
@@ -641,7 +624,6 @@
 
 // console.log(check("",""))
 
-
 // const promise = new Promise(function(resolve,reject){
 //         setTimeout(()=>{
 //             console.log("inside promise")
@@ -674,32 +656,31 @@
 //     console.log(msg)
 // })
 
-
 // async function async1(){
-//     console.log(1)  
-//     await async2() 
-//     console.log(2)  
+//     console.log(1)
+//     await async2()
+//     console.log(2)
 //   }
-  
+
 //   async function async2(){
-//     console.log(3) 
+//     console.log(3)
 //   }
-  
+
 //   console.log(4)
-  
+
 //   setTimeout(function(){
-//     console.log(5) 
+//     console.log(5)
 //   }, 0)
-  
-//  await async1() 
-  
+
+//  await async1()
+
 //   new Promise(function(resolve){
-//     console.log(6)  
-//     resolve()  
-//   }).then(function(){ 
-//     console.log(7)  
+//     console.log(6)
+//     resolve()
+//   }).then(function(){
+//     console.log(7)
 //   })
-  
+
 //   console.log(8)
 
 // function compress(str){
@@ -721,7 +702,6 @@
 // }
 // console.log(compress("aaaaaaaaaaaabbbbbbbbbbbbbbcccccccccccccaaaaaaaaaacccccccccccc")
 
-
 // const promise1 = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         resolve('Promise 1 rejected')
@@ -734,7 +714,7 @@
 //     },3000)
 // })
 // const promise3 = new Promise ((resolve,reject) => {
-//     setTimeout(() =>{ 
+//     setTimeout(() =>{
 //         resolve("Promise 3 resolved")
 //     },4000)
 // })
@@ -778,7 +758,6 @@
 //   .then((msg)=>console.log(msg))
 //   .catch((err)=>console.error(err))
 
-
 // class Animal {
 //   name;
 //   age;
@@ -813,7 +792,6 @@
 
 // console.log(Animal.prototype.constructor === Animal)
 // console.log(Animal.prototype.constructor.__proto__ === Animal.__proto__)
-
 
 //valid parantheses
 //(((())))
@@ -850,7 +828,6 @@
 // }
 // console.log(isValid(")("))
 
-
 // function isValid(str){
 //     const stack = []
 //     for(let s of str){
@@ -874,7 +851,6 @@
 //         return false
 //     }
 // }
-
 
 // const promise1 = new Promise((resolve, reject)=>{
 //     setTimeout(()=>{
@@ -909,7 +885,6 @@
 // get maximum nesting depth of nested parentheses
 // "(1+(2*3)+((8)/4))+1"  => 3 (8 is in maximum parentheses depth)
 // "(1)+((2))+(((3)))" => 3 (last digit 3 is in maximum parentheses depth)
-
 
 //currying
 // function add(a){
@@ -955,7 +930,6 @@
 // get(obj1,"a.a.a.a") // 11
 //we have to implement a function that will halt the operation
 //  for x amount of time if it fails for y count
- 
 
 // function circuitBreaker(){
 //     let flag = true
@@ -975,7 +949,6 @@
 // const breakk = circuitBreaker()
 // breakk()
 
-
 // function myFunc(){
 //     return new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
@@ -983,12 +956,12 @@
 //         },1000)
 //     })
 // }
- 
+
 // function circuitBreaker (func,  maxCount, haltTime){
 //     let isHalted = false;
 //     let count =0;
 //     let timer  = null;
-    
+
 //     return function(){
 //         return new Promise((resolve,reject)=>{
 //             if(isHalted){
@@ -1023,7 +996,7 @@
 //         })
 //     }
 // }
- 
+
 // const breaker = circuitBreaker(myFunc, 2, 3000);
 // breaker().then((msg)=>console.log(msg)).catch((err)=>console.error(err))
 
@@ -1088,12 +1061,12 @@
 //         },1000)
 //     })
 // }
- 
+
 // function circuitBreaker (func,  maxCount, haltTime){
 //     let isHalted = false;
 //     let count =0;
 //     let timer  = null;
-    
+
 //     return function(){
 //         return new Promise((resolve,reject)=>{
 //             if(isHalted){
@@ -1126,14 +1099,14 @@
 //         })
 //     }
 // }
- 
+
 // const breaker = circuitBreaker(myFunc, 2, 3000);
 // breaker().then((msg)=>console.log(msg)).catch((err)=>console.error(err))
 
 // // setTimeout(()=>{
 // //     breaker().then((msg)=>console.log(msg)).catch((err)=>console.error(err));
 // // },1000);
- 
+
 // setTimeout(()=>{
 //     breaker().then((msg)=>console.log(msg)).catch((err)=>console.error(err));
 // },5100);
@@ -1202,7 +1175,6 @@
 //     breaker().then((msg) => console.log(msg)).catch((err) => console.error(err));
 // }, 6000);
 
-
 // setTimeout(() => {
 //     console.log("timeout after 5ms");
 //   }, 0);
@@ -1222,12 +1194,10 @@
 //     }
 //   });
 
-
 // new Promise((resolve, reject)=>{
 //     return;
 //     reject("rejected")
 // }).then((msg=>console.log(msg))).catch((err)=>console.error(err))
-
 
 // function myFn(){
 //     return "returned from my Fn";
@@ -1236,9 +1206,9 @@
 //   return "awesome function"
 // }
 
-// console.log(myFn); 
+// console.log(myFn);
 
- /*The intersectionWith function takes a custom comparator function and multiple arrays as arguments. 
+/*The intersectionWith function takes a custom comparator function and multiple arrays as arguments. 
  It compares the elements of the arrays using the comparator function to determine equality. 
  The function returns a new array containing the elements that are present in all given arrays.*/
 //  const arr1 = [
@@ -1262,7 +1232,7 @@
 //     arr1,
 //     arr2,
 //   ); // => [{ x: 1, y: 2 }]
- 
+
 // function DOMHelper(id){
 //     const element = document.querySelector(id)
 //     return{
@@ -1323,7 +1293,7 @@
 //     .map(x => x + " <-")
 //     .value()
 // console.log(res)
-//     //  ["6 <-", "8 <-", "100 <-"] 
+//     //  ["6 <-", "8 <-", "100 <-"]
 
 // new Promise((resolve, reject)=>{
 //     resolve(1)
@@ -1344,9 +1314,363 @@
 // delete Dog.prototype.bark
 // pet.bark()
 
-const fn = function(x,y){
-    return this.a + x +y
+// const fn = function(x,y){
+//     return this.a + x +y
+// }
+// const obj = {a:10}
+// const bound = fn.bind(obj,5)
+// console.log(bound.call({a:50},3))
+
+// function lookup(obj,path){
+//     return path.split('.').reduce((acc,key)=>{
+//         return acc && acc[key] !== undefined ? obj[path] : undefined;
+//     },obj)
+// }
+// const person = {
+//     age:18,
+//     name: "Abhay",
+//     address:{
+//         city: " ahmedabad",
+//         area: "SBR"
+//     }
+// }
+// console.log(lookup(person,"address.city"))
+
+// const obj = {
+//     value: 42,
+//     show: function(){
+//         console.log(this.value)
+//         setTimeout(function(){
+//             console.log(this.value)
+//         },100)
+//     }
+// }
+// obj.show()
+
+// function outer(){
+//     let a=1;
+//     function inner(){
+//         console.log(a)
+//     }
+//     a =2;
+//     return inner;
+// }
+// const fn =  outer()
+// fn()
+
+// function* counter(){
+//     let i=0;
+//     while(i<3){
+//         yield i++;
+//     }
+// }
+// const c = counter()
+// c.next();
+// c.next();
+// console.log(c.next().value)
+
+// let greet = "hello"
+// function sayHello(){
+//     let greet = "hi"
+//     return function (){console.log(greet)}
+// }
+// console.log(sayHello()())
+
+// function check(){
+//     const a=1
+// }
+// check()
+// console.log(typeof a)
+
+// console.log(JSON.stringify([1,2,3,null,undefined,function(){}]))
+
+// let funcs = []
+// for(let i=0;i<3;i++){
+//     funcs.push(()=>i)
+// }
+// console.log(funcs[0](),funcs[1](),funcs[2]())
+
+// {
+//     let a =1
+// }
+// console.log(a)
+
+// const user={
+//     name :"neo",
+//     getName : function(){
+//         return this.name;
+//     }
+// }
+// const clone = {name:"inshiya"}
+
+// const bound = user.getName.bind(clone)
+// console.log(bound.call(user))
+
+// const awesome = function really(){
+//     return 'react'
+// }
+// console.log(awesome())
+// console.log(really())
+
+// let x={}
+// let y = {key:'value'}
+// let z = {key:'value'}
+// x[y] = 1
+// x[z] = 2
+// console.log(x[y] == x[z])
+// console.log(x[y])
+// console.log(x)
+
+// const map = new Map()
+// map.set(y,1)
+// map.set(z,2)
+// console.log(map.size)
+// console.log(map)
+
+// const f = () =>{
+//     console.log(this.a)
+// }
+// f.call({a:10})
+
+// function* main(){
+//     yield 1;
+//     yield* sub();
+//     yield 5;
+// }
+
+// function* sub(){
+//     yield 2;
+//     yield 3;
+//     yield 4;
+// }
+// const gen = main()
+// console.log([...gen])
+
+// var a = 1
+
+// function func() {
+//   a = 2
+//   console.log(a)
+//   var a
+// }
+
+// func()
+
+// console.log(a)
+
+// // if (false) {
+// //   var b = 1
+// // }
+
+// // console.log(b)
+
+// if (!('b' in window)) {
+//     var b = 1
+//   }
+
+//   console.log(b) //undefined
+
+// async function foo(){
+//     console.log("x")
+//     await new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve()
+//             console.log("y")
+//         },0)
+//     })
+//     console.log("z")
+// }
+// foo();
+// setTimeout(()=>{console.log("a"),0})
+// const bodyEl = document.body
+// function maxHtOfDOM(el){
+//     if(el.chilren == null){
+//         return;
+//     }
+//     const maxHt = 0
+//     for(let i=0;i<el.chilren.length;i++){
+//         maxHt = Math.max()
+//     }
+// }
+
+// const obj = {
+//     a: {
+//       b: {
+//         c: [10, 11, 12],
+//       },
+//       d:"awesome"
+//     },
+//   };
+
+//   function get (obj,str,newVal){
+//     return str.split('.').reduce((acc,key)=>{
+//         return acc && acc[key] != undefined ? acc[key] : undefined;
+//     },obj)
+//   }
+//   console.log(get(obj,"a.b.c")) // [1,2,3]
+//   console.log(get(obj,"a.b.d")) // "awesome"
+//   console.log(get(obj,"a.b.c.1")) // 11
+
+// function set(obj, str,newVal){
+//     const givenKeys =  str.split('.')
+//     for(let i =0 ;i<givenKeys.length-1;i++){
+//         obj = obj[givenKeys[i]]
+//     }
+//     const newObj= obj[givenKeys[givenKeys.length-1]] = newVal
+//     return newObj
+// }
+// console.log(set(obj,"a.b.c",[1,2,3]))
+// const obj = {
+//     a: {
+//       b: {
+//         c: [10, 11, 12],
+//       },
+//       d:"awesome"
+//     },
+//   };
+// function compress(obj){
+//     const object ={}
+//     function fn(obj,path){
+//         for(const [key,value] of Object.entries(obj)){
+//             const newPath = path ? `${path}.${key}`:key
+//             if(value && typeof value === 'object' && !(value instanceof Array)){
+//                 fn(value,newPath)
+//             }else{
+//                 object[newPath] = value
+//                 return;
+//             }
+//         }
+//     }
+//     fn(obj,"")
+//     return object
+// }
+// console.log(compress(obj))
+// const obj1 = {
+//     'a.b.c': [ 10, 11, 12 ],
+//     'a.d': 'awesome'
+// }
+// function expand(obj){
+//     let object = {}
+//     let tempObj = {}
+//     for(const [key,value] of Object.entries(obj)){
+//         const oneKey = key.split('.')
+//         for(let i=0;i<oneKey.length;i++){
+//             if(object[oneKey[i]] === undefined){
+//                 tempObj[oneKey[i]] = ( i === oneKey.length-1 ? value :{})
+//                 if(i>0 && i!=oneKey.length-1){
+//                     object[oneKey[i-1]] = tempObj
+//                 }
+//                 tempObj = tempObj[oneKey[i]]
+//             }else{
+//                 tempObj = object[oneKey[i]]
+//             }
+//         }
+//     }
+//     return object
+// }
+// console.log(expand(obj1))
+
+// const obj = {
+//   a: {
+//     b: {
+//       c: 20,
+//     },
+//     d: 20,
+//   },
+// };
+
+// function getPathFromValue(obj, val) {
+//     function fn(obj,path){
+//         let tracedPath = "no path found"
+//         for(const [key,value] of Object.entries(obj)){
+//             const newPath = path ? `${path}.${key}` : key
+//             if(value === val){
+//                 tracedPath = newPath
+//                 return tracedPath;
+//             }
+//             else if((value && typeof value === 'object') && !(Array.isArray(value))){
+//                 console.log("called for: ",value)
+//                 const result = fn(value,newPath)
+//                 if(result){
+//                     return result
+//                 }
+//             }
+//         }
+//     }
+//     let str = fn(obj,"")
+//     return str
+// }
+// console.log(getPathFromValue(obj,20))    
+// const obj = {
+//     a: {
+//       b: {
+//         c: [10, 11, 12],
+//       },
+//       d:"awesome"
+//     },
+//   };
+// function set(obj, str,newVal){
+//     const givenKeys =  str.split('.')
+//     for(let i =0 ;i<givenKeys.length-1;i++){
+//         obj = obj[givenKeys[i]]
+//     }
+//     if(typeof givenKeys[givenKeys.length -1] === 'number'){
+//         obj[givenKeys.length-1] = newVal
+//         return obj
+//     }else{
+//         obj[givenKeys[givenKeys.length-1]] = newVal
+//         return obj
+//     }
+// }
+// console.log(set(obj,"a.b.c.1",9))
+
+// const obj1 = { 
+//     'a.b.c': [ 10, 11, 12 ], 
+//     'a.d': 'awesome' ,
+//     "a.b.e":"really"
+// }
+// function expand(obj){
+//     let object = {}
+//     let tempObj = {}
+//     for(const [key,value] of Object.entries(obj)){
+//         const oneKey = key.split('.')
+//         for(let i=0;i<oneKey.length;i++){
+//             console.log("object: ",object)
+//             console.log("temp: ",tempObj)
+//             if(object[oneKey[i]] === undefined ){
+//                 tempObj[oneKey[i]] = ( i === oneKey.length-1 ? value :{})
+//                 if(i>0 && i!=oneKey.length-1){
+//                     object[oneKey[i-1]] = tempObj
+//                 }
+//                 tempObj = tempObj[oneKey[i]]
+//             }else{
+//                 tempObj = object[oneKey[i]]
+//             }
+//         }
+//     }
+//     return object
+// }
+// console.log(expand(obj1))
+//[1,2,4] 6
+function sum(arr, target){
+    // let mysum = 0
+    // for(let i=0;i<arr.length;i++){
+    //     for(let j=i+1;j<arr.length;j++){
+    //         mysum = arr[i] + arr[j]
+    //         if(mysum === target){
+    //             return [arr[i],arr[j]]
+    //         }
+    //     }
+    // }
+    const set = new Set()
+    for(let i=0;i<arr.length;i++){
+        if(set.has(target-arr[i])){
+            return [arr[i],target-arr[i]]
+        }
+        else[
+            set.add(arr[i])
+        ]
+    }
+    return []
 }
-const obj = {a:10}
-const bound = fn.bind(obj,5)
-console.log(bound.call({a:50},3))
+console.log(sum([3,4,5,2,5,6,1],11))

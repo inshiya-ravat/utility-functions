@@ -24,9 +24,8 @@ function compareObj(obj1, obj2){
 
     for(let  i=0;i<obj1Entries.length;i++){
         for(let j=0;j<obj1Entries[i].length;j++){
-            console.log(obj1Entries[i][j],obj2Entries[i][j])
-            if(typeof obj1Entries[i][j] === 'object' && typeof obj2Entries[i][j] === 'object'){
-                console.log("calling again")
+            console.log(obj1Entries[i][j])
+            if((obj1Entries[i][j] && typeof obj1Entries[i][j] === 'object') && (obj2Entries[i][j] && typeof obj2Entries[i][j] === 'object')){
                 return compareObj(obj1Entries[i][j], obj2Entries[i][j])
             }
             else if(obj1Entries[i][j] !== obj2Entries[i][j]){
